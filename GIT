@@ -1,0 +1,2 @@
+# Cuando creas un nuevo proyecto y requieras subirlo al github pero no puedes por que el github tiene el archivo .readme  
+git push origin master --force
