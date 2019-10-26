@@ -1,2 +1,3 @@
 # Cuando creas un nuevo proyecto y requieras subirlo al github pero no puedes por que el github tiene el archivo .readme  
+# Cuidado con este comando, solo usar en el inicio porqué sobreescribe tu rama master o la que especificaste
 git push origin master --force
