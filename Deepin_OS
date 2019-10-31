@@ -8,3 +8,6 @@ link: https://unix.stackexchange.com/questions/520715/deepin-15-10-error-could-n
 La instalación del postgresSQL incluido el pgAdmin estan en este link: https://github.com/Aperrix/my-config/wiki/PostgreSQL-Deepin
 
 Luego de ejecutar docker run .. vas a al navegador, tipeas 127.0.0.1:80
+
+Para detener el docker el siguiente comando: sudo docker stop ID_CONTAINER 
+como obtienes el id de tu container, con el siguiente comando: sudo docker container ls
