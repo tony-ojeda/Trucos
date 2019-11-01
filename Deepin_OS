@@ -1,5 +1,5 @@
-# Unos de los dolores de cabeza que me ocasiono este SO fue el de instalar postgresql, por las distintas versiones entre el mismo
-postg.. y la del debia. Investigando encontre unos enlaces muy interesantes
+# Uno de los dolores de cabeza que me ocasiono este SO fue el de instalar postgresql, por las distintas versiones entre el mismo
+postg.. y la del deepin. Investigando encontre unos enlaces muy interesantes
 
 Mi primero instalar Docker, link: https://github.com/Aperrix/my-config/wiki/Docker-Deepin
 Otro problema que tambien surgia fue el de distribucion unstable por por parte de deepin, por cierto es deepin 15.11. En este 
@@ -11,3 +11,6 @@ Luego de ejecutar docker run .. vas a al navegador, tipeas 127.0.0.1:80
 
 Para detener el docker el siguiente comando: sudo docker stop ID_CONTAINER 
 como obtienes el id de tu container, con el siguiente comando: sudo docker container ls
+
+!Important: Lo anterior mandarlo a la fuck...  , me entere que deepin 15.11 esta basado en debian 9 , asi que todo lo que quieran
+instalar busquenlo como install softX in debian 9 y  ya esta, link postgres: https://tecadmin.net/install-postgresql-on-debian-9-stretch/
