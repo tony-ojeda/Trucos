@@ -2,6 +2,10 @@
 # Cuidado con este comando, solo usar en el inicio porqué sobreescribe tu rama master o la que especificaste
 git push origin master --force
 
+# Cuando creas una proyecto git local y empiezas a trabajar sobre el, luego intentas subir a tu repositorio remoto que tambien
+# tiene su commit (Ejm: init readme ).
+git pull origin master --allow-unrelated-historias
+
 # Si cometimos el error de agregar al índice un archivo, haciendo git add ruta-archivo: podemos revertirlo con:
 git reset file-path
 
