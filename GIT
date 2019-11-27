@@ -1,3 +1,27 @@
 # Cuando creas un nuevo proyecto y requieras subirlo al github pero no puedes por que el github tiene el archivo .readme  
 # Cuidado con este comando, solo usar en el inicio porqué sobreescribe tu rama master o la que especificaste
 git push origin master --force
+
+# Si cometimos el error de agregar al índice un archivo, haciendo git add ruta-archivo: podemos revertirlo con:
+git reset file-path
+
+# Si nos olvidamos de agregar un archivo al commit o ocurrio un cambio del ultimo momento, podemos agregar ese
+# ese ultimo cambio al ultimo commit creado con
+git commit --amend --no-edit
+# si queremos cambiar el nombre del commit
+git commit --amend -m "name commit"
+
+# Si queremos eliminar el ultimo commit creado si recuperar los cambios
+git reset --hard HEAD~1
+
+# Si queremos eliminar el ultimo commit, pero no perder los ultimos cambio agregado en el index ( staged files )
+git reset --soft HEAD~1
+
+# Si queremos eliminar el ultimo commit, pero no perder los ultimos cambios y volver al area de trabajo ( unstaged files )
+git reset HEAD~1
+
+# Si queremor borrar el ultimo commit ya subido a nuestra rama remota
+git revert HEAD
+# tambien puedes eliminar un commit en especifico si afectar a los otros commits
+git revert <commit>
+# para buscar el commit podemos hacer git log
