@@ -14,3 +14,8 @@ como obtienes el id de tu container, con el siguiente comando: sudo docker conta
 
 !Important: Lo anterior mandarlo a la fuck...  , me entere que deepin 15.11 esta basado en debian 9 , asi que todo lo que quieran
 instalar busquenlo como install softX in debian 9 y  ya esta, link postgres: https://tecadmin.net/install-postgresql-on-debian-9-stretch/
+
+
+#############  INSTALL NAVICAT  ###########
+previamente instalar wine ( permite ejecutar archivos .exe) : apt-get install wine
+https://joselian.wordpress.com/2015/11/12/instalar-navicat-premium-en-ubuntu/
