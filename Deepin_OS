@@ -19,3 +19,6 @@ instalar busquenlo como install softX in debian 9 y  ya esta, link postgres: htt
 #############  INSTALL NAVICAT  ###########
 previamente instalar wine ( permite ejecutar archivos .exe) : apt-get install wine
 https://joselian.wordpress.com/2015/11/12/instalar-navicat-premium-en-ubuntu/
+
+#############  PROBLEM DEEPIN CAUSADO POR CIERRE FORCE O CONECTOR PUERTOS USB CON FOMATOS DIFERENTES  #############
+$fsck -c -y /dev/sda<n>
