@@ -22,3 +22,35 @@ https://joselian.wordpress.com/2015/11/12/instalar-navicat-premium-en-ubuntu/
 
 #############  PROBLEM DEEPIN CAUSADO POR CIERRE FORCE O CONECTOR PUERTOS USB CON FOMATOS DIFERENTES  #############
 $fsck -c -y /dev/sda<n>
+
+###########  INSTALL POSTGRE (PROBLEM PORT) ######################
+sudo apt-get update
+
+sudo apt-get install postgresql-9.4 postgresql-client-9.4
+Or sudo apt-get install postgresql-9.6 postgresql-client-9.6
+.
+.
+
+--- crear db, roles .. ---
+sudo -u postgres psql
+postgres=# create database mydb;
+postgres=# create user myuser with encrypted password 'mypass';
+postgres=# grant all privileges on database mydb to myuser;
+link: https://medium.com/coding-blocks/creating-user-database-and-adding-access-on-postgresql-8bfcd2f4a91e
+
+--- desistalar postgre ---
+sudo apt-get --purge remove postgresql
+sudo apt-get purge postgresql*
+sudo apt-get --purge remove postgresql postgresql-doc postgresql-common
+link: https://kb.objectrocket.com/postgresql/how-to-completely-uninstall-postgresql-757
+
+-- cambiar puerto si es necesario  -----
+nano /etc/postgresql/9.5/main/postgresql.conf
+service postgresql restart
+
+--- listar puertos ocupados ----
+lsof -i :5432
+
+---- matar puerto ---
+kill -9 <PID>
+
