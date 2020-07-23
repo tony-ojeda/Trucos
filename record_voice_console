@@ -1,0 +1,23 @@
+---  verify Mic ( Microphone) is on -------
+$ alsamixer
+
+------- install sox  ------------
+Now install the Swiss Army knife of audio manipulation with the following command.
+$ sudo  apt-get install  sox
+
+Once the installation of sox is finished run the following command to start recording your voice.
+$ sox -t alsa default test.wav
+
+install format mp3
+$ sudo apt-get install libsox-fmt-mp3
+
+Once the installation of sox is finished run the following command to start recording your voice.
+$ sox -t alsa default test.wav  or $ sox -t alsa default test.mp3
+
+Start talking like a cool geek and hit CTRL+C when you want to stop the voice record.
+
+----- install mplayer ----
+$ sudo apt-get install mplayer
+
+finally
+$ mplayer test.wav or $ mplayer test.mp3
